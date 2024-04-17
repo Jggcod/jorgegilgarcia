@@ -1,3 +1,9 @@
+import GithubIcon from "./Github";
+import IconRedirect from "./IconRedirect";
+import LinkedInIcon from "./LinkedIn";
+import MailIcon from "./Mail";
+import ProjectsIcon from "./Projects";
+
 export default function Header() {
   return (
     <header className="flex justify-between items-center py-3 mx-5">
@@ -14,26 +20,19 @@ export default function Header() {
       </main>
 
       <nav className="flex flex-row gap-x-5">
-        <a
-          href="https://github.com"
-          target="_blank">
-          Github
-        </a>
-        <a
-          href="https://github.com"
-          target="_blank">
-          Github
-        </a>
-        <a
-          href="https://github.com"
-          target="_blank">
-          Github
-        </a>
-        <a
-          href="https://github.com"
-          target="_blank">
-          Github
-        </a>
+        <IconRedirect href="https://github.com">
+          <GithubIcon />
+        </IconRedirect>
+        <IconRedirect href="https://linkedin.com">
+          <LinkedInIcon />
+        </IconRedirect>
+        {/* Tenemos que linkar esta parte de iconos de la folder con una page de proyectos */}
+        <IconRedirect href="">
+          <ProjectsIcon />
+        </IconRedirect>
+        <IconRedirect href="">
+          <MailIcon />
+        </IconRedirect>
       </nav>
     </header>
   );
