@@ -11,18 +11,20 @@ interface Props {
   buttonType?: keyof ButtonClasses;
 }
 
-const {href, target="_blank", rel="noopener noreferrer", buttonType="primary" } = Astro.props
-const buttonClass = 
-  {
-  primary: "rounded-full flex items-center justify-center aspect-square shadow-xl dark:shadow-thick hover:bg-zinc-800 bg-primary-950 dark:ring-white/30 ring-primary/20 dark:bg-red-100/10 hover:ring-primary/5 dark:hover:ring-white/20 duration-300 transition-all h-12 w-12",
-  secondary: "inline-flex items-center justify-center gap-2 px-3 py-2 space-x-2 text-base text-white transition bg-gray-800 border border-gray-600 focus-visible:ring-yellow-500/80 text-md hover:bg-gray-800 hover:border-gray-900 group max-w-fit rounded-xl hover:text-white focus:outline-none focus-visible:outline-none focus-visible:ring focus-visible:ring-white focus-visible:ring-offset-2 active:bg-black"
-  }
+const {
+  href,
+  target = "_blank",
+  rel = "noopener noreferrer",
+  buttonType = "primary",
+} = Astro.props;
+const buttonClass = {
+  primary:
+    "rounded-full flex items-center justify-center aspect-square shadow-xl dark:shadow-thick hover:bg-zinc-800 bg-primary-950 dark:ring-white/30 ring-primary/20 dark:bg-red-100/10 hover:ring-primary/5 dark:hover:ring-white/20 duration-300 transition-all h-12 w-12",
+  secondary:
+    "inline-flex items-center justify-center gap-2 px-3 py-2 space-x-2 text-base text-white transition bg-gray-800 border border-gray-600 focus-visible:ring-yellow-500/80 text-md hover:bg-gray-800 hover:border-gray-900 group max-w-fit rounded-xl hover:text-white focus:outline-none focus-visible:outline-none focus-visible:ring focus-visible:ring-white focus-visible:ring-offset-2 active:bg-black",
+};
 ---
 
-<a
-  class={`${buttonClass[buttonType]}`}
-  href={href}
-  target={target}
-  rel={rel}>
+<a class={`${buttonClass[buttonType]}`} href={href} target={target} rel={rel}>
   <slot />
 </a>
