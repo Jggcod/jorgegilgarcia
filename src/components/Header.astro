@@ -6,7 +6,7 @@ import MailIcon from "./icons/Mail.astro";
 import ProjectsIcon from "./icons/Projects.astro";
 ---
 
-<header class="flex justify-between items-center pt-5 container">
+<header class="flex justify-between items-center pt-5 container ">
   <div class="flex gap-x-3">
     <img
       class="rounded-none w-[50px] h-[50px]"
@@ -19,7 +19,7 @@ import ProjectsIcon from "./icons/Projects.astro";
     </div>
   </div>
 
-  <nav class="flex gap-x-5">
+  <div class="flex gap-x-5">
     <RedirectIcon href="https://github.com">
       <GithubIcon />
     </RedirectIcon>
@@ -33,5 +33,5 @@ import ProjectsIcon from "./icons/Projects.astro";
     <RedirectIcon href="">
       <MailIcon />
     </RedirectIcon>
-  </nav>
+  </div>
 </header>
