@@ -5,34 +5,39 @@ import LinkedInIcon from "./icons/LinkedIn.astro";
 import MailIcon from "./icons/Mail.astro";
 import ProjectsIcon from "./icons/Projects.astro";
 ---
-<nav class="sticky top-0 z-10" >
-<header class="flex justify-between items-center pt-5 container backdrop-blur-sm mb-5 bg-black/10">
-  <div class="flex gap-x-3">
-    <img
-      class="rounded-none w-[50px] h-[50px]"
-      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjOFdoclVsGjqT0YHiCwwGLNjor88ki6dhNjZVrjmmHg&s"
-      alt="Photo"
-    />
-    <div class="flex flex-col">
-      <span class="text-2xl font-bold uppercase">Nombre Apellido</span>
-      <span class="opacity-80">Web developer</span>
-    </div>
-  </div>
 
-  <div class="flex gap-x-5">
-    <RedirectIcon href="https://github.com">
-      <GithubIcon />
-    </RedirectIcon>
-    <RedirectIcon href="https://linkedin.com">
-      <LinkedInIcon />
-    </RedirectIcon>
-    {/* Tenemos que linkar esta parte de iconos de la folder con una page de proyectos */}
-    <RedirectIcon href="">
-      <ProjectsIcon />
-    </RedirectIcon>
-    <RedirectIcon href="">
-      <MailIcon />
-    </RedirectIcon>
-  </div>
-</header>
+<nav class="sticky top-0 z-10">
+  <header
+    class="flex justify-between items-center pt-5 container backdrop-blur-sm mb-5 bg-black/10"
+  >
+    <div class="flex gap-x-3">
+      <img
+        class="rounded-none w-[50px] h-[50px]"
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjOFdoclVsGjqT0YHiCwwGLNjor88ki6dhNjZVrjmmHg&s"
+        alt="Photo"
+      />
+      <div class="flex flex-col">
+        <span class="text-2xl font-bold uppercase">Nombre Apellido</span>
+        <span class="opacity-80">Web developer</span>
+      </div>
+    </div>
+
+    <div class="flex gap-x-5">
+      <RedirectIcon href="https://github.com">
+        <GithubIcon />
+      </RedirectIcon>
+      <RedirectIcon href="https://linkedin.com">
+        <LinkedInIcon />
+      </RedirectIcon>
+      {
+        /* Tenemos que linkar esta parte de iconos de la folder con una page de proyectos */
+      }
+      <RedirectIcon href="">
+        <ProjectsIcon />
+      </RedirectIcon>
+      <RedirectIcon href="">
+        <MailIcon />
+      </RedirectIcon>
+    </div>
+  </header>
 </nav>
