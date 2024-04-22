@@ -1,0 +1,25 @@
+---
+import GithubIcon from "./icons/Github.astro";
+import RedirectIcon from "./RedirectIcon.astro";
+import LinkedInIcon from "./icons/LinkedIn.astro";
+import MailIcon from "./icons/Mail.astro";
+import ProjectsIcon from "./icons/Projects.astro";
+---
+
+<div class="flex gap-x-5">
+  <RedirectIcon href="https://github.com">
+    <GithubIcon />
+  </RedirectIcon>
+  <RedirectIcon href="https://linkedin.com">
+    <LinkedInIcon />
+  </RedirectIcon>
+  {
+    /* Tenemos que linkar esta parte de iconos de la folder con una page de proyectos */
+  }
+  <RedirectIcon href="">
+    <ProjectsIcon />
+  </RedirectIcon>
+  <RedirectIcon href="">
+    <MailIcon />
+  </RedirectIcon>
+</div>

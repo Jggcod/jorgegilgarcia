@@ -6,6 +6,7 @@ interface ButtonClasses {
 
 interface Props {
   href: string;
+  id?: string;
   target?: string;
   rel?: string;
   buttonType?: keyof ButtonClasses;
@@ -13,6 +14,7 @@ interface Props {
 
 const {
   href,
+  id,
   target = "_blank",
   rel = "noopener noreferrer",
   buttonType = "primary",
@@ -25,6 +27,12 @@ const buttonClass = {
 };
 ---
 
-<a class={`${buttonClass[buttonType]}`} href={href} target={target} rel={rel}>
+<a
+  class={`${buttonClass[buttonType]} transition`}
+  href={href}
+  target={target}
+  rel={rel}
+  id={id}
+>
   <slot />
 </a>

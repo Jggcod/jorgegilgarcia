@@ -1,9 +1,5 @@
 ---
-import GithubIcon from "./icons/Github.astro";
-import RedirectIcon from "./RedirectIcon.astro";
-import LinkedInIcon from "./icons/LinkedIn.astro";
-import MailIcon from "./icons/Mail.astro";
-import ProjectsIcon from "./icons/Projects.astro";
+import SocialsIcons from "./SocialsIcons.astro";
 ---
 
 <nav class="sticky top-0 z-10">
@@ -22,22 +18,6 @@ import ProjectsIcon from "./icons/Projects.astro";
       </div>
     </div>
 
-    <div class="flex gap-x-5">
-      <RedirectIcon href="https://github.com">
-        <GithubIcon />
-      </RedirectIcon>
-      <RedirectIcon href="https://linkedin.com">
-        <LinkedInIcon />
-      </RedirectIcon>
-      {
-        /* Tenemos que linkar esta parte de iconos de la folder con una page de proyectos */
-      }
-      <RedirectIcon href="">
-        <ProjectsIcon />
-      </RedirectIcon>
-      <RedirectIcon href="">
-        <MailIcon />
-      </RedirectIcon>
-    </div>
+    <SocialsIcons />
   </header>
 </nav>
