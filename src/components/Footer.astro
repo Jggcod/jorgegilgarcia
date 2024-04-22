@@ -1,10 +1,13 @@
 ---
 import RedirectIcon from "./RedirectIcon.astro";
 import ArrowUpIcon from "./icons/ArrowUp.astro";
+const currentYear = new Date().getFullYear();
 ---
 
 <footer class="flex justify-between items-center container">
-  <span>2024. All rights reserved.</span>
+  <span class="text-xs sm:text-base"
+    >©{currentYear} Nombre Apellido | All rights reserved.
+  </span>
   <RedirectIcon href="#header" target="_self">
     <ArrowUpIcon />
   </RedirectIcon>

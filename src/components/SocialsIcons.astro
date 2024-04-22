@@ -6,20 +6,20 @@ import MailIcon from "./icons/Mail.astro";
 import ProjectsIcon from "./icons/Projects.astro";
 ---
 
-<div class="flex gap-x-5">
+<div class="flex sm:gap-x-5 gap-2">
   <RedirectIcon href="https://github.com">
-    <GithubIcon />
+    <GithubIcon class="size-5 sm:size-6" />
   </RedirectIcon>
   <RedirectIcon href="https://linkedin.com">
-    <LinkedInIcon />
+    <LinkedInIcon class="size-5 sm:size-6" />
   </RedirectIcon>
   {
     /* Tenemos que linkar esta parte de iconos de la folder con una page de proyectos */
   }
   <RedirectIcon href="">
-    <ProjectsIcon />
+    <ProjectsIcon class="size-5 sm:size-6" />
   </RedirectIcon>
   <RedirectIcon href="">
-    <MailIcon />
+    <MailIcon class="size-5 sm:size-6" />
   </RedirectIcon>
 </div>
