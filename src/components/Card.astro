@@ -1,4 +1,6 @@
 ---
+import RedirectIcon from "./RedirectIcon.astro";
+import Link from "./icons/Link.astro";
 const { title, description, imgPath, alt } = Astro.props;
 ---
 
@@ -11,10 +13,8 @@ const { title, description, imgPath, alt } = Astro.props;
     <h2 class="flex flex-wrap text-justify opacity-80 py-2 text-pretty">
       {description}
     </h2>
-    <button
-      class="font-medium text-sm px-4 py-2 text-center text-white bg-white-700 hover:bg-white-800 focus:ring-4 focus:outline-none focus:ring-white-300 dark:bg-white-600 dark:hover:bg-white-700 dark:focus:ring-white-800 bg-zinc-800"
+    <RedirectIcon href="" target="_self" buttonType="secondary">
+      <Link class="size-4" />Access</RedirectIcon
     >
-      Access
-    </button>
   </div>
 </div>
