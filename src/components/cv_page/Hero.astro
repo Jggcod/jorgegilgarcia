@@ -4,7 +4,7 @@ import Section from "@/components/cv_page/Section.astro";
 import Mail from "@/components/icons/Mail.astro";
 import Webpage from "@/components/icons/Webpage.astro";
 import LinkedIn from "@/components/icons/LinkedIn.astro";
-import GitHub from "@/components/icons/GitHub.astro";
+import GitHub from "@/components/icons/Github.astro";
 import WorldMap from "@/components/icons/WorldMap.astro";
 
 function removeProtocol(url: string | undefined) {
@@ -57,7 +57,7 @@ const printInfo = [email, removeProtocol(linkedUrl), removeProtocol(webpageUrl)]
             .map(({ network, url }) => {
               const Icon = SOCIAL_ICONS[network];
 
-              return (
+              return Icon ? (
                 <a
                   href={url}
                   title={`Visit the profile of ${name} in ${network}`}
@@ -65,7 +65,7 @@ const printInfo = [email, removeProtocol(linkedUrl), removeProtocol(webpageUrl)]
                   rel="noopener noreferrer">
                   <Icon />
                 </a>
-              );
+              ) : null;
             })
         }
       </footer>
