@@ -1,0 +1,57 @@
+---
+import GitHub from "@/components/icons/GitHub.astro";
+import RedirectIcon from "./RedirectIcon.astro";
+import Link from "@/components/icons/Link.astro";
+import { projects } from "@cv";
+---
+
+<div class="flex flex-col gap-y-8 sm:gap-y-16">
+  {
+    projects.map(({ image, name, description, highlights, url, github }) => (
+      <article class="flex flex-col space-x-0 space-y-4 sm:space-y-8 group md:flex-row md:space-x-8 md:space-y-0">
+        <div class="w-full md:w-1/2">
+          <div class="relative flex flex-col items-center gap-8 transition duration-500 ease-in-out transform overflow-clip rounded-xl">
+            <img
+              alt="Test"
+              class="object-cover object-top w-full h-56 sm:size-3/4 transition duration-500 md:scale-110 md:group-hover:scale-105"
+              src={image}
+            />
+          </div>
+        </div>
+
+        <div class="w-full md:w-1/2 md:max-w-lg">
+          <h3 class="pb-1 text-base sm:text-2xl font-bold text-gray-800 dark:text-gray-100">{name}</h3>
+          <ul class="flex flex-wrap  mb-2 gap-x-2">
+            {highlights.map((tag) => (
+              <li>
+                <span class={`flex gap-x-2 rounded-full text-xs py-1 px-2 mt-2 bg-[#6daef8a7]`}>{tag}</span>
+              </li>
+            ))}
+          </ul>
+
+          <div class="text-xs sm:text-base mt-2 text-gray-700 dark:text-gray-400">{description}</div>
+          <div class="flex items-end justify-start mt-4 gap-x-4">
+            {github && (
+              <RedirectIcon
+                href={github}
+                title=""
+                buttonType="secondary">
+                <GitHub class="size-4 sm:size-6" />
+                Code
+              </RedirectIcon>
+            )}
+            {url && (
+              <RedirectIcon
+                href={url}
+                title=""
+                buttonType="secondary">
+                <Link class="size-4 sm:size-6" />
+                Preview
+              </RedirectIcon>
+            )}
+          </div>
+        </div>
+      </article>
+    ))
+  }
+</div>

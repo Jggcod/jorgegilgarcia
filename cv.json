@@ -1,0 +1,198 @@
+{
+  "basics": {
+    "name": "Jorge Gil Garcia",
+    "label": "Shopify App Developer | Full Stack Developer",
+    "image": "https://avatars.githubusercontent.com/u/46814329?v=4",
+    "email": "tu-email@gmail.com",
+    "url": "https://jggcod.github.io",
+    "summary": "I am Jorge, a Full-Stack Developer specialized in Shopify app development with a solid background in computer engineering and a passion for creating innovative e-commerce solutions.\\n\\nCurrently pursuing a Degree in Computer Engineering at Universitat Oberta de Catalunya (2024-2026), building upon previous studies in Computer Engineering at Universitat Politècnica de València (2013-2015). My education is complemented by specialized vocational training in Multiplatform Application Development and Microcomputer Systems at Florida Universitària.\\n\\nAt LÍNEA GRÁFICA, a Shopify Plus Partner agency, I develop mission-critical applications that power enterprise e-commerce operations. My expertise spans:\\n- Node.js & TypeScript - Scalable APIs and backend application development\\n- React - Dynamic and responsive user interfaces\\n- Shopify Apps Development - Native applications and advanced customizations\\n- Database Management - Efficient data handling with PostgreSQL and Prisma\\n- DevOps - CI/CD pipeline implementation and cloud infrastructure\\n\\nI thrive on solving complex technical challenges and translating business requirements into robust, maintainable code. My approach combines technical precision with business acumen, ensuring solutions that not only work flawlessly but also drive measurable value for clients.\\n\\nBeyond my current expertise in e-commerce development, I am deeply passionate about the transformative potential of Large Language Models (LLMs) and artificial intelligence. I am actively expanding my knowledge in Python and machine learning, recognizing these technologies as the cornerstone of tomorrow's digital landscape.\\n\\nMy growing interest in AI/ML encompasses:\\n- Python Development - Building foundational skills for data science and AI applications\\n- LLM Integration - Exploring how language models can revolutionize user experiences\\n- Machine Learning - Understanding algorithms and their practical applications\\n- AI-Driven Solutions - Envisioning how intelligent systems can enhance e-commerce\\n\\nI believe we are at the threshold of an AI revolution that will fundamentally reshape how we build and interact with technology. This conviction drives my commitment to continuously learning and positioning myself at the intersection of traditional web development and cutting-edge AI technologies.\\n\\nMy combination of solid technical education, practical Shopify experience, and forward-looking AI interests allows me to create applications that not only meet current business needs but are also prepared for the future of intelligent commerce. I constantly seek new challenges where I can apply my full-stack development expertise to create exceptional e-commerce experiences.",
+    "location": {
+      "address": "",
+      "postalCode": "",
+      "city": "Valencia",
+      "countryCode": "ES",
+      "region": "Spain"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "jorgegilgarcia",
+        "url": "https://www.linkedin.com/in/jorge-gil-garcia-4152a6163/"
+      },
+      {
+        "network": "GitHub",
+        "username": "Jggcod",
+        "url": "https://github.com/Jggcod"
+      },
+      {
+        "network": "Portfolio",
+        "username": "",
+        "url": "https://jggcod.github.io"
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "LÍNEA GRÁFICA - Shopify Plus Partner | Prestashop Partner",
+      "position": "Shopify App Developer",
+      "url": "https://www.lineagrafica.es/",
+      "startDate": "2024-06-01",
+      "summary": "Driving e-commerce innovation as a core technical contributor in a high-growth Shopify Plus Partner agency. Architected and shipped production-grade Shopify applications that directly impact enterprise merchant operations and revenue streams. Led end-to-end development cycles from concept to deployment, collaborating closely with stakeholders to transform complex business requirements into elegant technical solutions.\\n\\nSpearheaded the modernization of legacy integration systems, reducing processing times and improving system reliability across multiple client implementations. Played a pivotal role in scaling our development capabilities, establishing best practices and patterns that became team standards.\\n\\nDelivered several high-impact solutions that enhanced merchant workflows, improved operational efficiency, and unlocked new revenue opportunities for enterprise clients. My work directly contributed to client retention and business growth, with solutions being adopted across our entire partner ecosystem.\\n\\nKey technical achievements include building robust API integrations, implementing real-time synchronization systems between Shopify and external platforms, developing custom checkout extensions, and creating automated workflows that eliminated manual processes. Consistently delivered under tight deadlines while maintaining code quality and system stability.",
+      "highlights": [
+        "Node.js",
+        "TypeScript",
+        "React",
+        "Shopify API",
+        "GraphQL",
+        "Remix",
+        "Prisma",
+        "PostgreSQL"
+      ]
+    },
+    {
+      "name": "Freelance",
+      "position": "Web Developer",
+      "url": "",
+      "startDate": "2023-01-01",
+      "endDate": "2024-06-01",
+      "summary": "Embarked on an intensive learning journey to master modern web development technologies and frameworks. Built a diverse portfolio of responsive, mobile-first websites and applications that showcase contemporary design principles and best practices.\\n\\nImmersed myself in the latest frontend and backend ecosystems, including React, Next.js, TypeScript, and Node.js. Developed production-ready applications featuring server-side rendering, API integrations, and dynamic content management.\\n\\nFocused on creating performant, accessible, and user-centric web experiences. Implemented responsive designs that seamlessly adapt across devices, utilized modern CSS frameworks like Tailwind, and followed industry-standard development workflows including Git version control and component-based architecture.\\n\\nThis period of dedicated skill development enabled me to transition into professional development roles with a strong foundation in current technologies and best practices.",
+      "highlights": [
+        "React",
+        "Next.js",
+        "TypeScript",
+        "JavaScript",
+        "Tailwind CSS",
+        "Responsive Design",
+        "WordPress",
+        "Astro",
+        "Git"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "UOC - Universitat Oberta de Catalunya",
+      "url": "https://www.uoc.edu",
+      "area": "Computer Engineering",
+      "studyType": "Bachelor's Degree",
+      "startDate": "2022-09-01",
+      "endDate": "Present",
+      "score": "",
+      "courses": [""]
+    }
+  ],
+  "skills": [
+    {
+      "name": "JavaScript",
+      "level": "Advanced",
+      "keywords": ["Web Development", "Frontend", "Backend", "Fullstack"]
+    },
+    {
+      "name": "TypeScript",
+      "level": "Advanced",
+      "keywords": ["Web Development", "Frontend", "Backend", "Type Safety"]
+    },
+    {
+      "name": "Node.js",
+      "level": "Advanced",
+      "keywords": ["Backend", "JavaScript Runtime", "API Development"]
+    },
+    {
+      "name": "React",
+      "level": "Advanced",
+      "keywords": ["Frontend", "UI Library", "Component-Based"]
+    },
+    {
+      "name": "Shopify Development",
+      "level": "Advanced",
+      "keywords": ["E-commerce", "Shopify API", "GraphQL", "App Development"]
+    },
+    {
+      "name": "Next.js",
+      "level": "Intermediate",
+      "keywords": ["React Framework", "SSR", "Full-stack"]
+    },
+    {
+      "name": "Remix",
+      "level": "Advanced",
+      "keywords": ["React Framework", "Full-stack", "Web Standards"]
+    },
+    {
+      "name": "Prisma",
+      "level": "Advanced",
+      "keywords": ["ORM", "Database", "TypeScript"]
+    },
+    {
+      "name": "PostgreSQL",
+      "level": "Intermediate",
+      "keywords": ["Database", "SQL", "Relational Database"]
+    },
+    {
+      "name": "GraphQL",
+      "level": "Advanced",
+      "keywords": ["API", "Query Language", "Shopify"]
+    },
+    {
+      "name": "REST API",
+      "level": "Intermediate",
+      "keywords": ["API Design", "Backend", "Integration"]
+    },
+    {
+      "name": "Git",
+      "level": "Advanced",
+      "keywords": ["Version Control", "Collaboration", "GitHub"]
+    },
+    {
+      "name": "Tailwind CSS",
+      "level": "Advanced",
+      "keywords": ["CSS Framework", "Responsive Design", "Utility-First"]
+    },
+    {
+      "name": "HTML & CSS",
+      "level": "Advanced",
+      "keywords": ["Web Development", "Frontend", "Responsive Design"]
+    }
+  ],
+  "languages": [
+    {
+      "language": "Spanish",
+      "fluency": "Native speaker"
+    },
+    {
+      "language": "Valencian",
+      "fluency": "Native speaker"
+    },
+    {
+      "language": "English",
+      "fluency": "Professional working proficiency"
+    }
+  ],
+  "projects": [
+    {
+      "name": "E-commerce Integration Platform",
+      "isActive": true,
+      "description": "Enterprise-grade Shopify application for ERP synchronization and multi-marketplace operations",
+      "highlights": [
+        "Shopify API",
+        "Node.js",
+        "TypeScript",
+        "PostgreSQL",
+        "GraphQL",
+        "Prisma"
+      ],
+      "url": "https://www.lineagrafica.es/"
+    },
+    {
+      "name": "Custom Checkout Extensions",
+      "isActive": true,
+      "description": "Suite of Shopify checkout UI extensions for enhanced customer experiences",
+      "highlights": [
+        "Shopify Functions",
+        "React",
+        "Remix",
+        "TypeScript",
+        "Shopify UI Extensions"
+      ]
+    }
+  ]
+}

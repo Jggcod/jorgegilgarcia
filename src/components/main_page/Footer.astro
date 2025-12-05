@@ -1,0 +1,20 @@
+---
+import RedirectIcon from "./RedirectIcon.astro";
+import ArrowUpIcon from "@/components//icons/ArrowUp.astro";
+
+import { basics } from "@cv";
+
+const currentYear = new Date().getFullYear();
+---
+
+<footer class="flex justify-between items-center container">
+  <span class="text-xs sm:text-xs tracking-tight sm:tracking-normal"
+    >©{currentYear} {basics.name} | All rights reserved.
+  </span>
+  <RedirectIcon
+    href="#header"
+    title=""
+    target="_self">
+    <ArrowUpIcon />
+  </RedirectIcon>
+</footer>

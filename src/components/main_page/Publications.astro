@@ -1,0 +1,37 @@
+---
+import { publications } from "@cv";
+---
+
+<div>
+  <ul class="flex flex-col gap-4">
+    {
+      publications.map(({ name, releaseDate, publisher, url, summary }) => {
+        const Year = new Date(releaseDate).getFullYear();
+        const paragraphs = summary.split("\\n");
+        return (
+          <li>
+            <article>
+              <header class="flex justify-between items-start mb-1">
+                <div>
+                  <a
+                    href={url}
+                    target="_blank"
+                    class="hover:underline">
+                    <h3 class="sm:text-xl font-bold text-[#6daef8]">{name}</h3>
+                  </a>
+                  <h4 class="font-semibold text-sm sm:text-xl text-gray-600 dark:text-white">{publisher}</h4>
+                </div>
+                <time class="text-xs pt-2 sm:text-sm text-gray-600/90 dark:text-white/90">{Year}</time>
+              </header>
+              <footer class="relative text-pretty text-sm sm:text-base flex flex-col gap-1 pb-1 sm:pb-4 text-gray-600 dark:text-gray-300 md:col-span-3">
+                {paragraphs.map((paragraph) => (
+                  <p class="text-pretty text-sm sm:text-base">- {paragraph}</p>
+                ))}
+              </footer>
+            </article>
+          </li>
+        );
+      })
+    }
+  </ul>
+</div>

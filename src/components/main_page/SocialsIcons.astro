@@ -1,0 +1,46 @@
+---
+import RedirectIcon from "./RedirectIcon.astro";
+import CV from "@/components/icons/Cv.astro";
+import GitHub from "@/components/icons/GitHub.astro";
+import LinkedIn from "@/components/icons/LinkedIn.astro";
+import Webpage from "@/components/icons/Webpage.astro";
+import Mail from "@/components/icons/Mail.astro";
+
+import { basics } from "@cv";
+
+const { name, profiles, email } = basics;
+
+const SOCIAL_ICONS: Record<string, any> = { GitHub, LinkedIn, Webpage, CV };
+---
+
+<div class="grid grid-cols-2 sm:gap-x-5 gap-1 gap-x-3 sm:flex sm:flex-nowrap">
+  {
+    email && (
+      <a
+        class="rounded-full flex items-center justify-center aspect-square shadow-xl dark:shadow-thick hover:bg-zinc-800 bg-primary-950 dark:ring-white/30 ring-primary/20 dark:bg-red-100/10 hover:ring-primary/5 dark:hover:ring-white/20 duration-300 transition-all sm:h-12 sm:w-12 h-9 w-9"
+        href={`mailto:${email}`}
+        title={`Send an email to ${name} on ${email}`}
+        target="_blank"
+        rel="noopener noreferrer">
+        <Mail />
+      </a>
+    )
+  }
+  {
+    profiles
+      .filter((profile) => profile.network !== "Webpage")
+      .map(({ network, url }) => {
+        const Icon = SOCIAL_ICONS[network];
+
+        return (
+          <RedirectIcon
+            href={url}
+            title={`Visit the profile of ${name} in ${network}`}
+            target="_blank"
+            rel="noopener noreferrer">
+            <Icon />
+          </RedirectIcon>
+        );
+      })
+  }
+</div>

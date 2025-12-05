@@ -1,0 +1,13 @@
+---
+import Section from "@/components/cv_page/Section.astro";
+
+import { basics } from "@cv";
+const { summary } = basics;
+const paragraphs = summary.split("\\n");
+---
+
+<Section
+  title="About"
+  classCss="no-print">
+  {paragraphs.map((paragraph) => <p>{paragraph}</p>)}
+</Section>

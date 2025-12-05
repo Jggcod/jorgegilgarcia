@@ -1,0 +1,25 @@
+---
+import SocialsIcons from "./SocialsIcons.astro";
+import { basics } from "@cv";
+
+const { name, label, image } = basics;
+---
+
+<nav class="sticky top-0 z-10 sm:flex sm:justify-center">
+  <header
+    class="flex justify-between items-center pt-2 pb-2 sm:pt-5 sm:pb-2 sm:container px-3 backdrop-blur-sm dark:bg-black/10 bg-white/10">
+    <div class="flex items-center gap-x-3">
+      <img
+        class="rounded-sm sm:w-[50px] sm:h-[50px] w-[40px] h-[40px]"
+        src={image}
+        alt=`Photo of ${name}`
+      />
+      <div class="flex flex-col">
+        <span class="sm:text-2xl text-base font-bold uppercase text-[#6daef8]">{name}</span>
+        <span class="text-xs sm:text-base opacity-80">{label}</span>
+      </div>
+    </div>
+
+    <SocialsIcons />
+  </header>
+</nav>
