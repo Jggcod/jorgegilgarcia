@@ -1,0 +1,32 @@
+---
+import yearFormat from "@/helpers/yearFormat";
+
+const { position, name, summary, startDate, endDate, url } = Astro.props;
+
+const years = yearFormat(startDate, endDate);
+const paragraphs = summary.split("\\n");
+---
+
+<div
+  class="relative mx-12 pb-2 sm:pb-12 grid before:absolute before:left-[-35px] before:block before:h-full before:border-l-2 before:border-black/20 dark:before:border-white/15 before:content-[''] md:grid-cols-5 md:gap-10 md:space-x-4]">
+  <div class="relative md:col-span-2">
+    <div class="sticky top-0">
+      <span class="text-[#6daef8] sm:-left-[48px] -left-[43px] absolute rounded-full text-3xl sm:text-5xl">&bull;</span>
+
+      <h3 class="sm:text-xl font-bold text-[#6daef8]">{position}</h3>
+      <a
+        href={url}
+        target="_blank"
+        class="hover:underline">
+        <h4 class="font-semibold sm:text-xl text-gray-600 dark:text-white">
+          {name}
+        </h4>
+      </a>
+      <time class="text-xs sm:text-sm text-gray-600/90 dark:text-white/90">{years}</time>
+    </div>
+  </div>
+  <div
+    class="relative text-pretty text-sm sm:text-base flex flex-col gap-1 pb-1 sm:pb-4 text-gray-600 dark:text-gray-300 md:col-span-3">
+    {paragraphs.map((paragraph: string) => <p>- {paragraph}</p>)}
+  </div>
+</div>

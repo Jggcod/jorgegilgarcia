@@ -2,8 +2,8 @@
 interface Props {
   title: string;
 }
-import Header from "../components/Header.astro";
-import Footer from "../components/Footer.astro";
+import Header from "@/components/main_page/Header.astro";
+import Footer from "@/components/main_page/Footer.astro";
 const { title } = Astro.props;
 import "@fontsource-variable/source-code-pro";
 ---
@@ -12,18 +12,30 @@ import "@fontsource-variable/source-code-pro";
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="description" content="Personal Webpage" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="generator" content={Astro.generator} />
+    <meta
+      name="description"
+      content="Resume of my life plus some of my projects"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="/favicon.svg"
+    />
+    <meta
+      name="generator"
+      content={Astro.generator}
+    />
     <title>{title}</title>
   </head>
 
   <body class="relative text-black dark:text-white">
     <div
       id="header"
-      class="absolute top-0 bottom-0 z-[-2] min-h-screen w-full bg-gray-50 dark:bg-gray-950 bg-[radial-gradient(ellipse_80%_80%at_50%-20%,rgba(217,216,255,0.5),rgba(255,255,255,0.9))] dark:bg-[radial-gradient(ellipse_80%_80%at_50%-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]"
-    >
+      class="absolute top-0 bottom-0 z-[-2] min-h-screen w-full bg-gray-50 dark:bg-gray-950 bg-[radial-gradient(ellipse_80%_80%at_50%-20%,rgba(217,216,255,0.5),rgba(255,255,255,0.9))] dark:bg-[radial-gradient(ellipse_80%_80%at_50%-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]">
     </div>
 
     <Header />

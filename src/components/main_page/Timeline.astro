@@ -1,0 +1,15 @@
+---
+import TimelineItem from "./TimelineItem.astro";
+
+import { work } from "@cv";
+---
+
+<ol class="relative sm:mt-14">
+  {
+    work.map((item) => (
+      <li class="">
+        <TimelineItem {...item} />
+      </li>
+    ))
+  }
+</ol>

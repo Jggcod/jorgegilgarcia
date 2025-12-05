@@ -1,0 +1,39 @@
+---
+import Layout from "@/layouts/LayoutCv.astro";
+
+import About from "@/components/cv_page/About.astro";
+import Education from "@/components/cv_page/Education.astro";
+import Experience from "@/components/cv_page/Experience.astro";
+import Hero from "@/components/cv_page/Hero.astro";
+import Projects from "@/components/cv_page/Projects.astro";
+import Skills from "@/components/cv_page/Skills.astro";
+import Publications from "@/components/cv_page/Publications.astro";
+
+import { basics } from "@cv";
+---
+
+<Layout title=`${basics.name} - CV `>
+  <main>
+    <Hero />
+    <About />
+    <Experience />
+    <Publications />
+    <Education />
+    <Projects />
+    <Skills />
+  </main>
+</Layout>
+
+<style>
+  main {
+    padding: 4rem;
+    margin: auto;
+    width: 100%;
+  }
+
+  @media (width <= 700px) {
+    main {
+      padding: 1.5rem;
+    }
+  }
+</style>
