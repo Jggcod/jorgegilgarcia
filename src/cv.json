@@ -27,7 +27,7 @@
       {
         "network": "Webpage",
         "username": "",
-        "url": "https://jggcod.github.io"
+        "url": "https://jggcod.github.io/jorgegilgarcia"
       },
       {
         "network": "CV",
@@ -78,10 +78,40 @@
     {
       "institution": "UOC - Universitat Oberta de Catalunya",
       "url": "https://www.uoc.edu",
-      "area": "Computer Engineering",
+      "area": "Grado en Ingeniería, Ingeniería informática",
       "studyType": "Bachelor's Degree",
-      "startDate": "2022-09-01",
-      "endDate": "Present",
+      "startDate": "2024-01-01",
+      "endDate": "2026-12-31",
+      "score": "",
+      "courses": [""]
+    },
+    {
+      "institution": "Universitat Politècnica de València (UPV)",
+      "url": "https://www.upv.es",
+      "area": "Grado en Ingeniería, Ingeniería informática",
+      "studyType": "Bachelor's Degree",
+      "startDate": "2013-01-01",
+      "endDate": "2015-12-31",
+      "score": "",
+      "courses": [""]
+    },
+    {
+      "institution": "Florida Universitària",
+      "url": "https://www.florida-uni.es",
+      "area": "Ciclo Formativo de Grado Superior, Desarrollo de Aplicaciones Multiplataforma, Ciclo formativo superior de formación profesional",
+      "studyType": "Vocational Training",
+      "startDate": "2011-01-01",
+      "endDate": "2013-12-31",
+      "score": "",
+      "courses": [""]
+    },
+    {
+      "institution": "Florida Universitària",
+      "url": "https://www.florida-uni.es",
+      "area": "Ciclo Formativo de Grado Medio, Técnico en Sistemas Microinformáticos y Redes, Ciclo formativo de formación profesional",
+      "studyType": "Vocational Training",
+      "startDate": "2009-01-01",
+      "endDate": "2011-12-31",
       "score": "",
       "courses": [""]
     }
