@@ -1,7 +1,7 @@
 ---
 import RedirectIcon from "./RedirectIcon.astro";
 import CV from "@/components/icons/Cv.astro";
-import GitHub from "@/components/icons/GitHub.astro";
+import GitHub from "@/components/icons/Github.astro";
 import LinkedIn from "@/components/icons/LinkedIn.astro";
 import Webpage from "@/components/icons/Webpage.astro";
 import Mail from "@/components/icons/Mail.astro";
@@ -32,7 +32,7 @@ const SOCIAL_ICONS: Record<string, any> = { GitHub, LinkedIn, Webpage, CV };
       .map(({ network, url }) => {
         const Icon = SOCIAL_ICONS[network];
 
-        return (
+        return Icon ? (
           <RedirectIcon
             href={url}
             title={`Visit the profile of ${name} in ${network}`}
@@ -40,7 +40,7 @@ const SOCIAL_ICONS: Record<string, any> = { GitHub, LinkedIn, Webpage, CV };
             rel="noopener noreferrer">
             <Icon />
           </RedirectIcon>
-        );
+        ) : null;
       })
   }
 </div>
