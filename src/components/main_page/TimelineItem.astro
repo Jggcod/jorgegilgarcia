@@ -27,6 +27,6 @@ const paragraphs = summary.split("\\n");
   </div>
   <div
     class="relative text-pretty text-sm sm:text-base flex flex-col gap-1 pb-1 sm:pb-4 text-gray-600 dark:text-gray-300 md:col-span-3">
-    {paragraphs.map((paragraph: string) => <p>- {paragraph}</p>)}
+    {paragraphs.map((paragraph: string) => <p>{paragraph.trim() ? `- ${paragraph}` : paragraph}</p>)}
   </div>
 </div>
