@@ -25,9 +25,14 @@
         "url": "https://github.com/Jggcod"
       },
       {
-        "network": "Portfolio",
+        "network": "Webpage",
         "username": "",
         "url": "https://jggcod.github.io"
+      },
+      {
+        "network": "CV",
+        "username": "",
+        "url": "https://jggcod.github.io/jorgegilgarcia/cv"
       }
     ]
   },
