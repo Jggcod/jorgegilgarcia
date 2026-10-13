@@ -3,7 +3,7 @@ import Layout from "@/layouts/LayoutIndex.astro";
 import Timeline from "@/components/main_page/Timeline.astro";
 import Projects from "@/components/main_page/Projects.astro";
 
-import { basics } from "@cv";
+import { basics, publications } from "@cv";
 import Publications from "@/components/main_page/Publications.astro";
 const { summary } = basics;
 const paragraphs = summary.split("\\n");
@@ -16,10 +16,16 @@ const paragraphs = summary.split("\\n");
         {paragraphs.map((paragraph) => <p class="mt-0.2">{paragraph}</p>)}
       </h1>
     </section>
-    <h1 class="text-xl mt-6 sm:mt-14 mb-2 font-medium sm:text-3xl text-primary dark:text-white">Publications</h1>
-    <section>
-      <Publications />
-    </section>
+    {
+      publications.length > 0 && (
+        <>
+          <h1 class="text-xl mt-6 sm:mt-14 mb-2 font-medium sm:text-3xl text-primary dark:text-white">Publications</h1>
+          <section>
+            <Publications />
+          </section>
+        </>
+      )
+    }
     <h1 class="text-xl mt-6 sm:mt-14 mb-2 font-medium sm:text-3xl text-primary dark:text-white">Experience</h1>
     <section>
       <Timeline />
