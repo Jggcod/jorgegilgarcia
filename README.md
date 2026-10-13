@@ -22,31 +22,6 @@ All content lives in a single data file, [`src/cv.json`](src/cv.json), which fol
 - **Tailwind CSS**: utility-first styling with dark mode support
 - **GitHub Actions**: automatic build and deployment to GitHub Pages on every push
 
-## Project structure
-
-```text
-src/
-├── cv.json              # Single source of truth for all content
-├── pages/
-│   ├── index.astro      # Landing page
-│   └── cv.astro         # Printable CV page
-├── layouts/             # Page layouts
-├── components/
-│   ├── main_page/       # Landing page components
-│   ├── cv_page/         # CV page sections
-│   └── icons/           # SVG icons
-└── helpers/             # Utilities
-```
-
-## Running locally
-
-```sh
-npm install
-npm run dev       # http://localhost:4321/jorgegilgarcia
-npm run build     # type check + production build in ./dist
-npm run preview   # preview the production build
-```
-
 ## Contact
 
 📧 [jggcod@gmail.com](mailto:jggcod@gmail.com)
