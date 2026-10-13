@@ -1,11 +1,11 @@
 {
   "basics": {
     "name": "Jorge Gil Garcia",
-    "label": "Shopify App Developer | Full Stack Developer",
+    "label": "Full-Stack Developer | Node.js · TypeScript · ERP & E-commerce",
     "image": "/jorgegilgarcia/1736423197932.jpg",
     "email": "jggcod@gmail.com",
     "url": "https://jggcod.github.io",
-    "summary": "I am Jorge, a Full-Stack Developer specialized in Shopify app development with a solid background in computer engineering and a passion for creating innovative e-commerce solutions.\\n\\nCurrently pursuing a Degree in Computer Engineering at Universitat Oberta de Catalunya (2024-2026), building upon previous studies in Computer Engineering at Universitat Politècnica de València (2013-2015). My education is complemented by specialized vocational training in Multiplatform Application Development and Microcomputer Systems at Florida Universitària.\\n\\nAt LÍNEA GRÁFICA, a Shopify Plus Partner agency, I develop mission-critical applications that power enterprise e-commerce operations. My expertise spans:\\n- Node.js & TypeScript - Scalable APIs and backend application development\\n- React - Dynamic and responsive user interfaces\\n- Shopify Apps Development - Native applications and advanced customizations\\n- Database Management - Efficient data handling with PostgreSQL and Prisma\\n- DevOps - CI/CD pipeline implementation and cloud infrastructure\\n\\nI thrive on solving complex technical challenges and translating business requirements into robust, maintainable code. My approach combines technical precision with business acumen, ensuring solutions that not only work flawlessly but also drive measurable value for clients.\\n\\nBeyond my current expertise in e-commerce development, I am deeply passionate about the transformative potential of Large Language Models (LLMs) and artificial intelligence. I am actively expanding my knowledge in Python and machine learning, recognizing these technologies as the cornerstone of tomorrow's digital landscape.\\n\\nMy growing interest in AI/ML encompasses:\\n- Python Development - Building foundational skills for data science and AI applications\\n- LLM Integration - Exploring how language models can revolutionize user experiences\\n- Machine Learning - Understanding algorithms and their practical applications\\n- AI-Driven Solutions - Envisioning how intelligent systems can enhance e-commerce\\n\\nI believe we are at the threshold of an AI revolution that will fundamentally reshape how we build and interact with technology. This conviction drives my commitment to continuously learning and positioning myself at the intersection of traditional web development and cutting-edge AI technologies.\\n\\nMy combination of solid technical education, practical Shopify experience, and forward-looking AI interests allows me to create applications that not only meet current business needs but are also prepared for the future of intelligent commerce. I constantly seek new challenges where I can apply my full-stack development expertise to create exceptional e-commerce experiences.",
+    "summary": "Full-Stack Developer based in Valencia, specialized in Node.js and TypeScript. At LÍNEA GRÁFICA, a Shopify Premier Partner agency, I am a core developer of the company's proprietary cloud ERP for omnichannel e-commerce, used in production by retail brands and franchises.\\n\\nI work across the whole lifecycle: modeling business logic (inventory, orders, invoicing, B2B, multi-store), building real-time integrations with Shopify and PrestaShop, adapting modules to each client, and shipping it all with Docker and CI/CD pipelines (GitHub Actions, Jenkins) on self-managed servers. I also build custom Shopify apps with Remix, React and Prisma.\\n\\nOutside work I build native Android apps with Kotlin and Jetpack Compose, following clean architecture and testing practices. I am currently completing a Degree in Computer Engineering at UOC and actively exploring how LLMs and AI can be applied to real business software.\\n\\nI enjoy turning complex business requirements into reliable, maintainable software.",
     "location": {
       "address": "",
       "postalCode": "",
@@ -38,38 +38,48 @@
   },
   "work": [
     {
-      "name": "LÍNEA GRÁFICA - Shopify Plus Partner | Prestashop Partner",
-      "position": "Shopify App Developer",
+      "name": "LÍNEA GRÁFICA - Shopify Premier Partner | PrestaShop Partner",
+      "position": "Full-Stack Developer · ERP & Shopify",
       "url": "https://www.lineagrafica.es/",
       "startDate": "2024-06-01",
-      "summary": "Driving e-commerce innovation as a core technical contributor in a high-growth Shopify Plus Partner agency. Architected and shipped production-grade Shopify applications that directly impact enterprise merchant operations and revenue streams. Led end-to-end development cycles from concept to deployment, collaborating closely with stakeholders to transform complex business requirements into elegant technical solutions.\\n\\nSpearheaded the modernization of legacy integration systems, reducing processing times and improving system reliability across multiple client implementations. Played a pivotal role in scaling our development capabilities, establishing best practices and patterns that became team standards.\\n\\nDelivered several high-impact solutions that enhanced merchant workflows, improved operational efficiency, and unlocked new revenue opportunities for enterprise clients. My work directly contributed to client retention and business growth, with solutions being adopted across our entire partner ecosystem.\\n\\nKey technical achievements include building robust API integrations, implementing real-time synchronization systems between Shopify and external platforms, developing custom checkout extensions, and creating automated workflows that eliminated manual processes. Consistently delivered under tight deadlines while maintaining code quality and system stability.",
+      "summary": "Core developer of the company's proprietary cloud ERP for omnichannel e-commerce (Node.js + TypeScript), working across the full lifecycle: business logic, integrations, infrastructure and deployment.\\nERP business logic: designed and implemented the domain rules behind inventory and multi-warehouse stock, orders and returns, invoicing and taxes, customers, B2B pricing, product bundles, gift cards and multi-store / franchise operations.\\nIntegrations: built real-time, bidirectional synchronization between the ERP and Shopify / PrestaShop (catalog, stock, orders, customers) using REST and GraphQL APIs, webhooks and background job queues, with retry and error-handling strategies to keep data consistent.\\nClient customization: adapted and configured ERP modules to each client's operations, translating business requirements from consultants and merchants into technical specifications and production features.\\nDevOps: containerized services with Docker, deployed and maintained them on self-managed VPS infrastructure, and built CI/CD workflows with GitHub Actions (build, test) and Jenkins (deployment) for automated, repeatable releases.\\nShopify apps: developed custom Shopify apps and extensions with Remix, React, Prisma and PostgreSQL for Shopify Plus merchants.\\nProduction support: diagnosed and resolved incidents in live environments, optimized synchronization processes and monitored system reliability.",
       "highlights": [
         "Node.js",
         "TypeScript",
         "React",
+        "Remix",
         "Shopify API",
         "GraphQL",
-        "Remix",
+        "PostgreSQL",
         "Prisma",
-        "PostgreSQL"
+        "Docker",
+        "GitHub Actions",
+        "Jenkins"
       ]
     },
     {
-      "name": "Freelance",
-      "position": "Web Developer",
+      "name": "Independent Projects",
+      "position": "Full-Stack Web Developer",
       "url": "",
       "startDate": "2023-01-01",
       "endDate": "2024-06-01",
-      "summary": "Embarked on an intensive learning journey to master modern web development technologies and frameworks. Built a diverse portfolio of responsive, mobile-first websites and applications that showcase contemporary design principles and best practices.\\n\\nImmersed myself in the latest frontend and backend ecosystems, including React, Next.js, TypeScript, and Node.js. Developed production-ready applications featuring server-side rendering, API integrations, and dynamic content management.\\n\\nFocused on creating performant, accessible, and user-centric web experiences. Implemented responsive designs that seamlessly adapt across devices, utilized modern CSS frameworks like Tailwind, and followed industry-standard development workflows including Git version control and component-based architecture.\\n\\nThis period of dedicated skill development enabled me to transition into professional development roles with a strong foundation in current technologies and best practices.",
+      "summary": "Self-directed full-stack development period, building a portfolio of backend services, web applications and interactive frontends that led directly to my role at a Shopify partner agency.\\nBackend & APIs: built REST APIs with Node.js, Express and TypeScript, including JWT authentication and user management on PostgreSQL with Prisma ORM, and a MongoDB / Mongoose service containerized with Docker.\\nReal-time & networking: implemented real-time communication with WebSockets and worked through CORS, HTTP and web server fundamentals by building servers from scratch.\\nFrontend applications: developed React and Next.js applications with component-based architecture, state management, routing and third-party API consumption.\\nInteractive UI: created animated, responsive landing pages and product showcases with GSAP, CSS animations and Tailwind CSS, focusing on performance and mobile-first design.\\nVanilla JavaScript: built geolocation and map-based apps, games and infinite-scroll interfaces, and wrote unit tests for JavaScript code.\\nShopify: built my first Shopify apps with Remix, Prisma and the Shopify API, the foundation for my later professional work.",
       "highlights": [
-        "React",
-        "Next.js",
+        "Node.js",
+        "Express",
         "TypeScript",
         "JavaScript",
+        "PostgreSQL",
+        "Prisma",
+        "MongoDB",
+        "Docker",
+        "WebSockets",
+        "React",
+        "Next.js",
         "Tailwind CSS",
-        "Responsive Design",
-        "WordPress",
+        "GSAP",
         "Astro",
+        "WordPress",
         "Git"
       ]
     }
@@ -118,14 +128,14 @@
   ],
   "skills": [
     {
-      "name": "JavaScript",
-      "level": "Advanced",
-      "keywords": ["Web Development", "Frontend", "Backend", "Fullstack"]
-    },
-    {
       "name": "TypeScript",
       "level": "Advanced",
       "keywords": ["Web Development", "Frontend", "Backend", "Type Safety"]
+    },
+    {
+      "name": "JavaScript",
+      "level": "Advanced",
+      "keywords": ["Web Development", "Frontend", "Backend", "Fullstack"]
     },
     {
       "name": "Node.js",
@@ -133,34 +143,14 @@
       "keywords": ["Backend", "JavaScript Runtime", "API Development"]
     },
     {
-      "name": "React",
+      "name": "Express",
       "level": "Advanced",
-      "keywords": ["Frontend", "UI Library", "Component-Based"]
+      "keywords": ["Backend", "REST API", "Middleware"]
     },
     {
-      "name": "Shopify Development",
+      "name": "REST API",
       "level": "Advanced",
-      "keywords": ["E-commerce", "Shopify API", "GraphQL", "App Development"]
-    },
-    {
-      "name": "Next.js",
-      "level": "Intermediate",
-      "keywords": ["React Framework", "SSR", "Full-stack"]
-    },
-    {
-      "name": "Remix",
-      "level": "Advanced",
-      "keywords": ["React Framework", "Full-stack", "Web Standards"]
-    },
-    {
-      "name": "Prisma",
-      "level": "Advanced",
-      "keywords": ["ORM", "Database", "TypeScript"]
-    },
-    {
-      "name": "PostgreSQL",
-      "level": "Intermediate",
-      "keywords": ["Database", "SQL", "Relational Database"]
+      "keywords": ["API Design", "Backend", "Integration", "Webhooks"]
     },
     {
       "name": "GraphQL",
@@ -168,14 +158,84 @@
       "keywords": ["API", "Query Language", "Shopify"]
     },
     {
-      "name": "REST API",
+      "name": "ERP Development",
+      "level": "Advanced",
+      "keywords": ["Business Logic", "Inventory", "Orders", "Invoicing", "B2B"]
+    },
+    {
+      "name": "Shopify Development",
+      "level": "Advanced",
+      "keywords": ["E-commerce", "Shopify API", "GraphQL", "App Development"]
+    },
+    {
+      "name": "PrestaShop",
       "level": "Intermediate",
-      "keywords": ["API Design", "Backend", "Integration"]
+      "keywords": ["E-commerce", "Integrations"]
+    },
+    {
+      "name": "React",
+      "level": "Advanced",
+      "keywords": ["Frontend", "UI Library", "Component-Based"]
+    },
+    {
+      "name": "Remix",
+      "level": "Advanced",
+      "keywords": ["React Framework", "Full-stack", "Web Standards"]
+    },
+    {
+      "name": "Next.js",
+      "level": "Intermediate",
+      "keywords": ["React Framework", "SSR", "Full-stack"]
+    },
+    {
+      "name": "Astro",
+      "level": "Intermediate",
+      "keywords": ["Static Sites", "Web Performance"]
+    },
+    {
+      "name": "PostgreSQL",
+      "level": "Advanced",
+      "keywords": ["Database", "SQL", "Relational Database"]
+    },
+    {
+      "name": "Prisma",
+      "level": "Advanced",
+      "keywords": ["ORM", "Database", "TypeScript"]
+    },
+    {
+      "name": "MongoDB",
+      "level": "Intermediate",
+      "keywords": ["NoSQL", "Mongoose", "Database"]
+    },
+    {
+      "name": "Docker",
+      "level": "Advanced",
+      "keywords": ["Containers", "DevOps", "Deployment"]
+    },
+    {
+      "name": "CI/CD",
+      "level": "Advanced",
+      "keywords": ["GitHub Actions", "Jenkins", "Automation", "DevOps"]
     },
     {
       "name": "Git",
       "level": "Advanced",
       "keywords": ["Version Control", "Collaboration", "GitHub"]
+    },
+    {
+      "name": "WebSockets",
+      "level": "Intermediate",
+      "keywords": ["Real-time", "Networking"]
+    },
+    {
+      "name": "Kotlin",
+      "level": "Intermediate",
+      "keywords": ["Android", "Mobile", "Coroutines"]
+    },
+    {
+      "name": "Jetpack Compose",
+      "level": "Intermediate",
+      "keywords": ["Android", "Declarative UI", "Material 3"]
     },
     {
       "name": "Tailwind CSS",
@@ -186,6 +246,16 @@
       "name": "HTML & CSS",
       "level": "Advanced",
       "keywords": ["Web Development", "Frontend", "Responsive Design"]
+    },
+    {
+      "name": "GSAP",
+      "level": "Intermediate",
+      "keywords": ["Animation", "Frontend"]
+    },
+    {
+      "name": "WordPress",
+      "level": "Intermediate",
+      "keywords": ["CMS", "Web Development"]
     }
   ],
   "languages": [
@@ -203,6 +273,36 @@
     }
   ],
   "projects": [
+    {
+      "name": "Petti - Dog walks & health (Android)",
+      "isActive": true,
+      "description": "Native Android app to manage a dog's daily life: GPS walk tracking with a foreground service (works with the screen off, multiple dogs per walk), a daily journal, rule-based health alerts, vaccination records and reminders, weight history, nutrition calculator and nearby vet search on an interactive map. Privacy-first: no accounts, no ads, all data stored on-device. Built with a multi-module clean architecture (domain / data / design system) and unit-tested use cases.",
+      "highlights": [
+        "Kotlin",
+        "Jetpack Compose",
+        "Material 3",
+        "Hilt",
+        "Room",
+        "Coroutines",
+        "WorkManager",
+        "MapLibre",
+        "Clean Architecture"
+      ]
+    },
+    {
+      "name": "Miusika - Battery-efficient music player (Android)",
+      "isActive": true,
+      "description": "Native Android music player focused on minimal battery usage: background playback with notification, lock-screen and headset controls, queue, shuffle and repeat, drag-and-drop playlists, sleep timer with fade-out and a home-screen widget. Uses audio offload so the CPU sleeps while the screen is off. Every architectural decision is documented as an ADR.",
+      "highlights": [
+        "Kotlin",
+        "Jetpack Compose",
+        "Media3 / ExoPlayer",
+        "Room",
+        "DataStore",
+        "Glance",
+        "Clean Architecture"
+      ]
+    },
     {
       "name": "E-commerce Integration Platform",
       "isActive": true,

@@ -4,9 +4,7 @@ import Section from "@/components/cv_page/Section.astro";
 import { projects } from "@cv";
 ---
 
-<Section
-  title="Projects"
-  classCss="no-print">
+<Section title="Projects">
   <ul>
     {
       projects.map(({ url, description, highlights, name }) => {
@@ -97,6 +95,9 @@ import { projects } from "@cv";
   }
 
   @media print {
+    article {
+      break-inside: avoid;
+    }
     article h3 span {
       animation-name: none;
     }

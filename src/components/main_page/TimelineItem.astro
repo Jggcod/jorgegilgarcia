@@ -1,7 +1,7 @@
 ---
 import yearFormat from "@/helpers/yearFormat";
 
-const { position, name, summary, startDate, endDate, url } = Astro.props;
+const { position, name, summary, startDate, endDate, url, highlights } = Astro.props;
 
 const years = yearFormat(startDate, endDate);
 const paragraphs = summary.split("\\n");
@@ -28,5 +28,16 @@ const paragraphs = summary.split("\\n");
   <div
     class="relative text-pretty text-sm sm:text-base flex flex-col gap-1 pb-1 sm:pb-4 text-gray-600 dark:text-gray-300 md:col-span-3">
     {paragraphs.map((paragraph: string) => <p>{paragraph.trim() ? `- ${paragraph}` : paragraph}</p>)}
+    {
+      highlights?.length > 0 && (
+        <ul class="flex flex-wrap gap-2 mt-3">
+          {highlights.map((tag: string) => (
+            <li>
+              <span class="flex rounded-full text-xs py-1 px-2 bg-[#6daef8a7] text-gray-800 dark:text-gray-100">{tag}</span>
+            </li>
+          ))}
+        </ul>
+      )
+    }
   </div>
 </div>

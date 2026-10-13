@@ -8,7 +8,7 @@ import { work } from "@cv";
 <Section title="Experience">
   <ul>
     {
-      work.map(({ name, startDate, endDate, position, summary, url }) => {
+      work.map(({ name, startDate, endDate, position, summary, url, highlights }) => {
         const years = yearFormat(startDate, endDate);
         const paragraphs = summary.split("\\n");
         return (
@@ -29,6 +29,13 @@ import { work } from "@cv";
                 {paragraphs.map((paragraph) => (
                   <p>{paragraph.trim() ? `- ${paragraph}` : paragraph}</p>
                 ))}
+                {highlights?.length > 0 && (
+                  <div class="tags">
+                    {highlights.map((tag) => (
+                      <span>{tag}</span>
+                    ))}
+                  </div>
+                )}
               </footer>
             </article>
           </li>
@@ -68,6 +75,22 @@ import { work } from "@cv";
     justify-content: space-between;
     align-items: flex-start;
     margin-bottom: 4px;
+  }
+
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.25rem;
+    margin-top: 0.5rem;
+  }
+
+  .tags span {
+    background: #eee;
+    border-radius: 6px;
+    color: #444;
+    font-size: 0.7rem;
+    font-weight: 500;
+    padding: 0.2rem 0.6rem;
   }
 
   time {
